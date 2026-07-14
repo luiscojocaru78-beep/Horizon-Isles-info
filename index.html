@@ -1,135 +1,229 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horizon Isles Beta v0.10 Info</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body{
-            margin:0;
-            background:#1b1b1b;
-            color:white;
-            font-family:Arial, Helvetica, sans-serif;
-        }
+<title>Horizon Isles Beta - Info</title>
 
-        header{
-            background:#0d47a1;
-            padding:30px;
-            text-align:center;
-            box-shadow:0 3px 10px rgba(0,0,0,.4);
-        }
+<style>
 
-        h1{
-            margin:0;
-            font-size:42px;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        p{
-            margin-top:8px;
-            color:#d0d0d0;
-        }
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(180deg,#0b1520,#1b2735,#0b1520);
+    color:white;
+}
 
-        .contenedor{
-            width:90%;
-            max-width:900px;
-            margin:30px auto;
-        }
+header{
+    background:#0d47a1;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(0,0,0,.5);
+}
 
-        .version{
-            background:#2b2b2b;
-            border-left:6px solid #2196F3;
-            margin-bottom:20px;
-            padding:20px;
-            border-radius:10px;
-            transition:.25s;
-        }
+header h1{
+    font-size:42px;
+}
 
-        .version:hover{
-            transform:scale(1.02);
-            background:#343434;
-        }
+header p{
+    margin-top:10px;
+    color:#d5e7ff;
+}
 
-        h2{
-            margin-top:0;
-            color:#4fc3f7;
-        }
+.contenedor{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+}
 
-        footer{
-            text-align:center;
-            padding:20px;
-            color:#999;
-        }
-    </style>
+.version{
+    background:#202a36;
+    border-left:6px solid #29b6f6;
+    margin-bottom:18px;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.25s;
+}
+
+.version:hover{
+    transform:translateY(-2px);
+    box-shadow:0 0 20px rgba(41,182,246,.3);
+}
+
+details{
+    padding:20px;
+}
+
+summary{
+    cursor:pointer;
+    list-style:none;
+    font-size:26px;
+    font-weight:bold;
+    color:#4fc3f7;
+    user-select:none;
+}
+
+summary::-webkit-details-marker{
+    display:none;
+}
+
+summary::after{
+    content:" ▼";
+    float:right;
+    transition:.2s;
+}
+
+details[open] summary::after{
+    content:" ▲";
+}
+
+.info{
+    margin-top:18px;
+    color:#dddddd;
+    line-height:1.7;
+}
+
+.info ul{
+    margin-left:25px;
+    margin-top:10px;
+}
+
+footer{
+    text-align:center;
+    color:#999;
+    padding:30px;
+}
+
+</style>
+
 </head>
 <body>
 
 <header>
-    <h1>🌴 Horizon Isles Beta v0.10 Info</h1>
-    <p>Registro de cambios de todas las versiones.</p>
+
+<h1>🌴 Horizon Isles Beta</h1>
+
+<p>Registro oficial de cambios</p>
+
 </header>
 
 <div class="contenedor">
 
-    <div class="version">
-        <h2>1.- v0.10</h2>
-        <p>Aquí escribe las novedades de la versión v0.10.</p>
-    </div>
+<div class="version">
+<details>
+<summary>v0.10</summary>
+<div class="info">
+Juego actual
+</div>
+</details>
+</div>
 
-    <div class="version">
-        <h2>2.- v0.11</h2>
-        <p>Aquí escribe las novedades de la versión v0.11.</p>
-    </div>
+<div class="version">
+<details>
+<summary>v0.11</summary>
+<div class="info">
+Errores arreglados
+Agua realista
+Barco naufragiado
+Clima
+Sistema día y noche    
+</div>
+</details>
+</div>
 
-    <div class="version">
-        <h2>3.- v0.12</h2>
-        <p>Aquí escribe las novedades de la versión v0.12.</p>
-    </div>
+<div class="version">
+<details>
+<summary>v0.12</summary>
+<div class="info">
+Escribe aquí la información de la versión v0.12.
+</div>
+</details>
+</div>
 
-    <div class="version">
-        <h2>4.- v0.13</h2>
-        <p>Aquí escribe las novedades de la versión v0.13.</p>
-    </div>
+<div class="version">
+<details>
+<summary>v0.13</summary>
+<div class="info">
+Escribe aquí la información de la versión v0.13.
+</div>
+</details>
+</div>
 
-    <div class="version">
-        <h2>5.- v0.14</h2>
-        <p>Aquí escribe las novedades de la versión v0.14.</p>
-    </div>
+<div class="version">
+<details>
+<summary>v0.14</summary>
+<div class="info">
+Escribe aquí la información de la versión v0.14.
+</div>
+</details>
+</div>
 
-    <div class="version">
-        <h2>6.- v0.15</h2>
-        <p>Aquí escribe las novedades de la versión v0.15.</p>
-    </div>
+<div class="version">
+<details>
+<summary>v0.15</summary>
+<div class="info">
+Escribe aquí la información de la versión v0.15.
+</div>
+</details>
+</div>
 
-    <div class="version">
-        <h2>7.- v0.16</h2>
-        <p>Aquí escribe las novedades de la versión v0.16.</p>
-    </div>
+<div class="version">
+<details>
+<summary>v0.16</summary>
+<div class="info">
+Escribe aquí la información de la versión v0.16.
+</div>
+</details>
+</div>
 
-    <div class="version">
-        <h2>8.- v0.17</h2>
-        <p>Aquí escribe las novedades de la versión v0.17.</p>
-    </div>
+<div class="version">
+<details>
+<summary>v0.17</summary>
+<div class="info">
+Escribe aquí la información de la versión v0.17.
+</div>
+</details>
+</div>
 
-    <div class="version">
-        <h2>9.- v0.18</h2>
-        <p>Aquí escribe las novedades de la versión v0.18.</p>
-    </div>
+<div class="version">
+<details>
+<summary>v0.18</summary>
+<div class="info">
+Escribe aquí la información de la versión v0.18.
+</div>
+</details>
+</div>
 
-    <div class="version">
-        <h2>10.- v0.19</h2>
-        <p>Aquí escribe las novedades de la versión v0.19.</p>
-    </div>
+<div class="version">
+<details>
+<summary>v0.19</summary>
+<div class="info">
+Escribe aquí la información de la versión v0.19.
+</div>
+</details>
+</div>
 
-    <div class="version">
-        <h2>11.- v0.20</h2>
-        <p>Aquí escribe las novedades de la versión v0.20.</p>
-    </div>
+<div class="version">
+<details>
+<summary>v0.20</summary>
+<div class="info">
+Escribe aquí la información de la versión v0.20.
+</div>
+</details>
+</div>
 
 </div>
 
 <footer>
-    © 2026 Horizon Isles - Registro de versiones Beta.
+
+© 2026 Horizon Isles
+
 </footer>
 
 </body>
